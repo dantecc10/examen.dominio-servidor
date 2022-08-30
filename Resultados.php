@@ -87,73 +87,73 @@ if (empty($_SESSION['ID'])) {
                 echo ("<td>");
                 switch ($contador) {
                     case 1:
-                        if ($contador == $R1) {
+                        if ($columna['Correcta'] ==  $R1) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 2:
-                        if ($contador == $R2) {
+                        if ($columna['Correcta'] ==  $R2) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 3:
-                        if ($contador == $R3) {
+                        if ($columna['Correcta'] ==  $R3) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 4:
-                        if ($contador == $R4) {
+                        if ($columna['Correcta'] ==  $R4) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 5:
-                        if ($contador == $R5) {
+                        if ($columna['Correcta'] ==  $R5) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 6:
-                        if ($contador == $R6) {
+                        if ($columna['Correcta'] ==  $R6) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 7:
-                        if ($contador == $R7) {
+                        if ($columna['Correcta'] ==  $R7) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 8:
-                        if ($contador == $R8) {
+                        if ($columna['Correcta'] ==  $R8) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 9:
-                        if ($contador == $R9) {
+                        if ($columna['Correcta'] ==  $R9) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     case 10:
-                        if ($contador == $R10) {
+                        if ($columna['Correcta'] ==  $R10) {
                             echo "<label class='Respuesta-Correcta'>Correcta</label>";
                         } else {
-                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                            echo "<label class='Respuesta-Incorrecta'>Incorrecta</label>";
                         }
                         break;
                     default:
