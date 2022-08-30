@@ -167,8 +167,8 @@ if (empty($_SESSION['ID'])) {
                             <option value='10C'>Cuentos</option>
                             <option value='10D'>Cómics</option><select></td>
                 </tr>
-
             </table>
+            <input type="submit" name="InicioSesión" value="Iniciar sesión" class="IniciarSesión DecoradoBotón">
         </form>
 
         <footer>
