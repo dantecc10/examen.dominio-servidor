@@ -77,11 +77,11 @@ if (empty($_SESSION['ID'])) {
                 echo ("<tr>");
 
                 echo ("<td>");
-                echo ($resultado['ID']);
+                echo ($columna['ID']);
                 echo ("</td>");
 
                 echo ("<td>");
-                echo ($resultado['Pregunta']);
+                echo ($columna['Pregunta']);
                 echo ("</td>");
 
                 echo ("<td>");
