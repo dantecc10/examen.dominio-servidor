@@ -8,9 +8,9 @@ if (empty($_SESSION['ID'])) {
 <html lang="es-MX">
 
 <head>
-    <link rel="shortcut icon" href="IMG/SS SUITE-1.png" type="image/x-icon">
-    <link id="EtiquetaCSS" rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA INSTITUCIONAL PUEBLA.css" Type="text/css" MEDIA="screen">
-    <script src="JavaScript/AjaxFiltros.js"></script>
+    <link rel="shortcut icon" href="../IMG/SS SUITE-1.png" type="image/x-icon">
+    <link id="EtiquetaCSS" rel="Stylesheet" href="../CSS/CSS GLOBAL - TEMA INSTITUCIONAL PUEBLA.css" Type="text/css" MEDIA="screen">
+
     <!--<link id="Oculta/Muestra" rel="Stylesheet" href="CSS/CSS OCULTAMIENTO.css" Type="text/css" MEDIA="screen">-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,18 +19,18 @@ if (empty($_SESSION['ID'])) {
 </head>
 
 <body>
-    <script src="JavaScript/CambiarTema.js"></script>
+    <script src="../JavaScript/CambiarTema.js"></script>
     <!--Encabezado (no mover)--> <br>
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Examen</h1> <a href="index.php">
-                    <img id="Logo" src="IMG/SS SUITE-1.png" alt="SS SUITE">
+                <h1>Examen</h1> <a href="../index.php">
+                    <img id="Logo" src="../IMG/SS SUITE-1.png" alt="SS SUITE">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="index.php">Inicio</a>
-                        <a href="Controlador/controlador_logout.php">Cerrar sesión</a>
+                        <a href="../index.php">Inicio</a>
+                        <a href="../Controlador/controlador_logout.php">Cerrar sesión</a>
 
                     </div>
                 </div>
@@ -42,7 +42,7 @@ if (empty($_SESSION['ID'])) {
     <div>
         <p class="Descripción-Artículo">
             <?php
-            require('Scripts PHP/Conexión.php');
+            require('../Scripts PHP/Conexión.php');
             echo (". Aquí tienes los resultados de tu examen diagnóstico, " . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . ".");
             ?>
         </p>
@@ -181,7 +181,7 @@ if (empty($_SESSION['ID'])) {
             </tr>
         </table>
         <?php
-        $consulta = ("INSERT INTO `resultados`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
+        $consulta = ("INSERT INTO `resultados_tercero`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
         //echo $consulta;
         $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Tus datos ya se han cargado en la base de datos de los resultados. No puedes hacerlo otra vez...</p>");
         ?>
@@ -189,7 +189,7 @@ if (empty($_SESSION['ID'])) {
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">
-                <script lang="JavaScript" src="JavaScript/Redes Sociales.js"></script>
+                <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script>
                 <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
                 <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();" src="../IMG/íconoFacebook.png" />
                 <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();" src="../IMG/íconoWhatsApp.png" />
