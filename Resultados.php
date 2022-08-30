@@ -73,6 +73,7 @@ if (empty($_SESSION['ID'])) {
             $R10 = $_POST['Pregunta10'];
 
             $contador = 1;
+            $aciertos;
             while ($columna = mysqli_fetch_array($resultado)) {
                 echo ("<tr>");
                 echo ("<td>" . $columna['ID'] . "</td>");
@@ -82,6 +83,7 @@ if (empty($_SESSION['ID'])) {
                     case 1:
                         if ($columna['Correcta'] ==  $R1) {
                             echo "<label class='Respuesta-Correcta'>$R1 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R1 Incorrecta</label>";
                         }
@@ -89,6 +91,7 @@ if (empty($_SESSION['ID'])) {
                     case 2:
                         if ($columna['Correcta'] ==  $R2) {
                             echo "<label class='Respuesta-Correcta'>$R2 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R2 Incorrecta</label>";
                         }
@@ -96,6 +99,7 @@ if (empty($_SESSION['ID'])) {
                     case 3:
                         if ($columna['Correcta'] ==  $R3) {
                             echo "<label class='Respuesta-Correcta'>$R3 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R3 Incorrecta</label>";
                         }
@@ -103,6 +107,7 @@ if (empty($_SESSION['ID'])) {
                     case 4:
                         if ($columna['Correcta'] ==  $R4) {
                             echo "<label class='Respuesta-Correcta'>$R4 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R4 Incorrecta</label>";
                         }
@@ -110,6 +115,7 @@ if (empty($_SESSION['ID'])) {
                     case 5:
                         if ($columna['Correcta'] ==  $R5) {
                             echo "<label class='Respuesta-Correcta'>$R5 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R5 Incorrecta</label>";
                         }
@@ -117,6 +123,7 @@ if (empty($_SESSION['ID'])) {
                     case 6:
                         if ($columna['Correcta'] ==  $R6) {
                             echo "<label class='Respuesta-Correcta'>$R6 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R6 Incorrecta</label>";
                         }
@@ -124,6 +131,7 @@ if (empty($_SESSION['ID'])) {
                     case 7:
                         if ($columna['Correcta'] ==  $R7) {
                             echo "<label class='Respuesta-Correcta'>$R7 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R7 Incorrecta</label>";
                         }
@@ -131,6 +139,7 @@ if (empty($_SESSION['ID'])) {
                     case 8:
                         if ($columna['Correcta'] ==  $R8) {
                             echo "<label class='Respuesta-Correcta'>$R8 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R8 Incorrecta</label>";
                         }
@@ -138,6 +147,7 @@ if (empty($_SESSION['ID'])) {
                     case 9:
                         if ($columna['Correcta'] ==  $R9) {
                             echo "<label class='Respuesta-Correcta'>$R9 Correcta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R9 Incorrecta</label>";
                         }
@@ -145,6 +155,7 @@ if (empty($_SESSION['ID'])) {
                     case 10:
                         if ($columna['Correcta'] ==  $R10) {
                             echo "<label class='Respuesta-Correcta'>$R10 orrecta</label>";
+                            $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R10 Incorrecta</label>";
                         }
@@ -159,6 +170,14 @@ if (empty($_SESSION['ID'])) {
                 echo ("</tr>");
             }
             ?>
+            <tr>
+                <td>Total: </td>
+                <td>
+                    <?php
+                    echo ($aciertos . " de 10");
+                    ?>
+                </td>
+            </tr>
         </table>
 
         <footer>
