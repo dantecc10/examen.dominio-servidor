@@ -1,8 +1,5 @@
 <?php
 session_start();
-if (($_SESSION['ID'] != 0) || ($_SESSION['ID'] != 15)) {
-    header("Location: index.php");
-}
 ?>
 <!DOCTYPE html>
 <html lang="es-MX">
