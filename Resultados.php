@@ -79,6 +79,7 @@ if (empty($_SESSION['ID'])) {
                 echo ("<td>" . $columna['ID'] . "</td>");
                 echo ("<td>" . $columna['Pregunta'] . "</td>");
                 echo ("<td>");
+
                 switch ($contador) {
                     case 1:
                         if ($columna['Correcta'] ==  $R1) {
@@ -179,6 +180,11 @@ if (empty($_SESSION['ID'])) {
                 </td>
             </tr>
         </table>
+        <?php
+        $consulta = ("INSERT INTO `resultados`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
+        echo $consulta;
+        $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+        ?>
 
         <footer>
             <div id="RedesSociales" align="center">
