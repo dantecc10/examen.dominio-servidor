@@ -389,6 +389,20 @@
         text-align: center;
         border-radius: 1.5px;
     }
+
+    label.Respuesta-Correcta {
+        background-color: green;
+    }
+
+    label.Respuesta-Incorrecta {
+        background-color: red;
+    }
+
+    label.Respuesta-Correcta,
+    label.Respuesta-Incorrecta {
+        color: white;
+        border-radius: 10px;
+    }
 }
 
 /*Fin de punto de ruptura para pantallas grandes*/
