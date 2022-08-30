@@ -27,9 +27,9 @@
 
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="DiagnósticoLiteratura.php">Examen de literatura</a>
-                        <a href="DiagnósticoComunicación.php">Examen de comunicación</a>
-                        <a href="DiagnósticoHistoria.php">Examen de historia</a>
+                        <a href="Exámenes/DiagnósticoLiteratura.php">Examen de literatura</a>
+                        <a href="Exámenes/DiagnósticoComunicación.php">Examen de comunicación</a>
+                        <a href="Exámenes/DiagnósticoHistoria.php">Examen de historia</a>
                         <!-- 
                             <button onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</button>
                         !-->
