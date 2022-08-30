@@ -41,6 +41,8 @@
         <div id="Encabezado-Inferior"></div>
     </header>
 
+    <!--
+
     <div id="DivInicioSesión" class="modal">
         <form class="modal-content animate" action="" method="post">
             <div class="imgcontainer">
@@ -56,15 +58,15 @@
                 <input type="password" placeholder="Contraseña (en minúsculas)*" name="contraseña" required="">
 
                 <input type="submit" name="InicioSesión" value="Iniciar sesión" class="IniciarSesión DecoradoBotón">
-                <!-- 
+                
                 <label>
                     <input type="checkbox" checked="checked" name="remember">Recordarme
                 </label>
-                !-->
+                
             </div>
             <?php
             include "Modelo/ConexiónSeguridad.php";
-            include "Controlador/controlador_login.php";
+            //include "Controlador/controlador_login_tercero.php";
             ?>
 
             <div class="container" style="background-color:#f1f1f1">
@@ -73,6 +75,7 @@
             </div>
         </form>
     </div>
+    !-->
     <h2>Examen diagnóstico</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h3 class="TítuloArtículo">Mtra. Edith Carpinteyro López.</h3>
