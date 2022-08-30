@@ -172,6 +172,7 @@ if (empty($_SESSION['ID'])) {
             }
             ?>
             <tr>
+                <td id="SinDecorado"></td>
                 <td id="TotalAciertos">Total: </td>
                 <td>
                     <?php
