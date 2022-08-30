@@ -44,7 +44,7 @@ if (empty($_SESSION['ID'])) {
         <p class="Descripción-Artículo">
             <?php
             require('Scripts PHP/Conexión.php');
-            echo (". Un gusto tenerte por aquí, " . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos']);
+            echo (". Un gusto tenerte por aquí, " . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . ".");
             ?>
         </p>
         <p>Filtros:</p>
