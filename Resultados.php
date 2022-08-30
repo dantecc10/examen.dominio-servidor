@@ -172,7 +172,7 @@ if (empty($_SESSION['ID'])) {
             }
             ?>
             <tr>
-                <td>Total: </td>
+                <td id="TotalAciertos">Total: </td>
                 <td>
                     <?php
                     echo ($aciertos . " de 10");

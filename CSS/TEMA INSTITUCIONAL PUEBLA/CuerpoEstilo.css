@@ -10,6 +10,10 @@
         width: 100%;
     }
 
+    td#TotalAciertos {
+        width: auto;
+    }
+
 
     table.Catálogo,
     table.Catálogo th,
