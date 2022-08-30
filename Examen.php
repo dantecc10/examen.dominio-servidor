@@ -24,7 +24,7 @@ if (empty($_SESSION['ID'])) {
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>SS SUITE</h1> <a href="index.php">
+                <h1>Examen</h1> <a href="index.php">
                     <img id="Logo" src="IMG/SS SUITE-1.png" alt="SS SUITE">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
