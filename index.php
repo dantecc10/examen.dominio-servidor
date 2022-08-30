@@ -20,7 +20,7 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>SS SUITE</h1> <a href="index.php">
+                <h1>EXAMEN</h1> <a href="index.php">
                     <img id="Logo" src="IMG/SS SUITE-1.png" alft="SS SUITE">
                 </a>
 
@@ -28,7 +28,6 @@
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
                         <a href="Consulta.php">Consultar productos</a>
-                        <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                         <button onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</button>
                     </div>
                 </div>
@@ -46,16 +45,18 @@
             </div>
 
             <div class="container">
-                <label for="email"><b>Correo electrónico</b></label>
-                <input type="text" placeholder="Correo electrónico*" name="email" required="">
+                <label for="usuario"><b>Usuario</b></label>
+                <input type="text" placeholder="Usuario (en mayúsculas)*" name="usuario" required="">
                 <br>
                 <label for="contraseña"><b>Contraseña</b></label>
-                <input type="password" placeholder="Contraseña*" name="contraseña" required="">
+                <input type="password" placeholder="Contraseña (en minúsculas)*" name="contraseña" required="">
 
                 <input type="submit" name="InicioSesión" value="Iniciar sesión" class="IniciarSesión DecoradoBotón">
+                <!-- 
                 <label>
                     <input type="checkbox" checked="checked" name="remember">Recordarme
                 </label>
+                !-->
             </div>
             <?php
             include "Modelo/ConexiónSeguridad.php";
@@ -68,11 +69,11 @@
             </div>
         </form>
     </div>
-    <h2>Servicio social</h2>
+    <h2>Examen diagnóstico - Literatura</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
-        <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
-        <h3 class="TítuloArtículo">En construcción...</h3>
-        <p class="Descripción-Artículo">Pronto actualizaré el código de index... paciencia</p>
+        <h3 class="TítuloArtículo">Mtra. Edith Carpinteyro López.</h3>
+        <h4 class="Autor-Artículo">Inicio de sesión</h4>
+        <p class="Descripción-Artículo">Inicia sesión desplegando las opciones del botón "Menú" y dando click en "Iniciar sesión".</p>
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">
