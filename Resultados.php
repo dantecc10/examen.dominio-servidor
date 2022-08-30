@@ -44,132 +44,129 @@ if (empty($_SESSION['ID'])) {
         <p class="Descripción-Artículo">
             <?php
             require('Scripts PHP/Conexión.php');
-            echo (". Un gusto tenerte por aquí, " . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . ".");
+            echo (". Aquí tienes los resultados de tu examen diagnóstico, " . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . ".");
             ?>
         </p>
 
 
         <p>Examen:</p>
-        <form action="" method="POST">
-            <table id="InsertarResultados" class="Examen">
-                <tr>
-                    <th>Número</th>
-                    <th>Pregunta</th>
-                    <th>Respuesta</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td><label for='Pregunta1'>¿Quién escribió la Iliada y la Odisea?</label></td>
-                    <td><select name='Pregunta1'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='1A'>Miguel De Cervantes Saavedra</option>
-                            <option value='1B'>Homero</option>
-                            <option value='1C'>William Shakespeare</option>
-                            <option value='1D'>Julio Verne</option><select></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><label for='Pregunta2'>Consiste en percibir, taducir y comprender palabras</label></td>
-                    <td><select name='Pregunta2'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='2A'>Escritura</option>
-                            <option value='2B'>Poesía</option>
-                            <option value='2C'>Lectura</option>
-                            <option value='2D'>Prosopopeya</option><select></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><label for='Pregunta3'>En la literatura es la simulación de la realidad</label></td>
-                    <td><select name='Pregunta3'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='3A'>Realidad</option>
-                            <option value='3B'>Leyenda</option>
-                            <option value='3C'>Novela</option>
-                            <option value='3D'>Ficción literaria</option><select></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><label for='Pregunta4'>Autor checo cuya obra está escrita en alemán, considerada una de las más influyentes del siglo XX</label></td>
-                    <td><select name='Pregunta4'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='4A'>Franz Kafka</option>
-                            <option value='4B'>William Shakespeare</option>
-                            <option value='4C'>Miguel De Cervantes Saavedra</option>
-                            <option value='4D'>Jorge Isaacs</option><select></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><label for='Pregunta5'>Narración que encadena una serie de sucesos para formar un relato y los presenta a través de ilustraciones</label></td>
-                    <td><select name='Pregunta5'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='5A'>Dibujo</option>
-                            <option value='5B'>Cartel</option>
-                            <option value='5C'>Historieta o cómic</option>
-                            <option value='5D'>Viñetas</option><select></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><label for='Pregunta6'>Es el arte que emplea la palabra hablada o escrita como medio de expresión</label></td>
-                    <td><select name='Pregunta6'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='6A'>Literatura</option>
-                            <option value='6B'>Ensayo</option>
-                            <option value='6C'>Lectura</option>
-                            <option value='6D'>Paráfrasis</option><select></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><label for='Pregunta7'>Palabras que imitan los sonidos de la naturaleza</label></td>
-                    <td><select name='Pregunta7'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='7A'>Onomatopeya</option>
-                            <option value='7B'>Globos</option>
-                            <option value='7C'>Gritos</option>
-                            <option value='7D'>Símbolos auditivos</option><select></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td><label for='Pregunta8'>Son los actores de una historia</label></td>
-                    <td><select name='Pregunta8'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='8A'>Personaje principal</option>
-                            <option value='8B'>Actores</option>
-                            <option value='8C'>Personajes</option>
-                            <option value='8D'>Narradores</option><select></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td><label for='Pregunta9'>Medievo-Clasicismo-Renacimiento-Barroco-Neoclasicismo-Romanticismo-Realismo-Naturalismo-Costumbrismo-Vanguardias-Modernismo son ejemplos de...</label></td>
-                    <td><select name='Pregunta9'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='9A'>Fases de la historia</option>
-                            <option value='9B'>Corrientes literarias</option>
-                            <option value='9C'>Etapas cronológicas</option>
-                            <option value='9D'>Etapas históricas</option><select></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td><label for='Pregunta10'>Mafalda de Quino, El gato Félix de Messmer, Fábulas de policías y Ladrones de trino o Garfield de Jim Davis son ejemplos de...</label></td>
-                    <td><select name='Pregunta10'>
-                            <option value='Por defecto'>Selecciona una opción
-                            </option>
-                            <option value='10A'>Fábulas </option>
-                            <option value='10B'>Cuentos cortos</option>
-                            <option value='10C'>Cuentos</option>
-                            <option value='10D'>Cómics</option><select></td>
-                </tr>
-            </table>
-            <input type="submit" name="InicioSesión" value="Terminar" class="IniciarSesión DecoradoBotón">
-        </form>
+
+        <table id="InsertarResultados" class="Examen">
+            <?php
+            $consulta = "SELECT `Correcta` FROM `preguntas`";
+            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+            echo ('<tr>');
+            echo ('<th>Número</th>');
+            echo ('<th>Pregunta</th>');
+            echo ('<th>Respuesta</th>');
+            echo ('</tr>');
+
+            $R1 = $_POST['Pregunta1'];
+            $R2 = $_POST['Pregunta2'];
+            $R3 = $_POST['Pregunta3'];
+            $R4 = $_POST['Pregunta4'];
+            $R5 = $_POST['Pregunta5'];
+            $R6 = $_POST['Pregunta6'];
+            $R7 = $_POST['Pregunta7'];
+            $R8 = $_POST['Pregunta8'];
+            $R9 = $_POST['Pregunta9'];
+            $R10 = $_POST['Pregunta10'];
+
+            $contador = 1;
+            while ($columna = mysqli_fetch_array($resultado)) {
+                echo ("<tr>");
+
+                echo ("<td>");
+                echo ($resultado['ID']);
+                echo ("</td>");
+
+                echo ("<td>");
+                echo ($resultado['Pregunta']);
+                echo ("</td>");
+
+                echo ("<td>");
+                switch ($contador) {
+                    case 1:
+                        if ($contador == $R1) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 2:
+                        if ($contador == $R2) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 3:
+                        if ($contador == $R3) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 4:
+                        if ($contador == $R4) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 5:
+                        if ($contador == $R5) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 6:
+                        if ($contador == $R6) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 7:
+                        if ($contador == $R7) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 8:
+                        if ($contador == $R8) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 9:
+                        if ($contador == $R9) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    case 10:
+                        if ($contador == $R10) {
+                            echo "<label class='Respuesta-Correcta'>Correcta</label>";
+                        } else {
+                            echo "<label class='Respuesta-Incorrecta'>Correcta</label>";
+                        }
+                        break;
+                    default:
+
+                        break;
+                }
+                $contador = ($contador + 1);
+                echo ("</td>");
+
+                echo ("</tr>");
+            }
+            ?>
+        </table>
 
         <footer>
             <div id="RedesSociales" align="center">

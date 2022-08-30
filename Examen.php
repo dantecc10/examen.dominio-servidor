@@ -50,7 +50,7 @@ if (empty($_SESSION['ID'])) {
 
 
         <p>Examen:</p>
-        <form action="" method="POST">
+        <form action="Resultados.php" method="POST">
             <table id="InsertarResultados" class="Examen">
                 <tr>
                     <th>Número</th>
@@ -70,7 +70,7 @@ if (empty($_SESSION['ID'])) {
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td><label for='Pregunta2'>Consiste en percibir, taducir y comprender palabras</label></td>
+                    <td><label for='Pregunta2'>Consiste en percibir, traducir y comprender palabras</label></td>
                     <td><select name='Pregunta2'>
                             <option value='Por defecto'>Selecciona una opción
                             </option>
