@@ -69,21 +69,7 @@ if (($_SESSION['ID'] != 0) || ($_SESSION['ID'] != 15)) {
                 echo ("</tr>");
             }
             ?>
-            <tr>
-                <td id="SinDecorado"></td>
-                <td id="TotalAciertos">Total: </td>
-                <td>
-                    <?php
-                    echo ($aciertos . " de 10");
-                    ?>
-                </td>
-            </tr>
         </table>
-        <?php
-        $consulta = ("INSERT INTO `resultados`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
-        //echo $consulta;
-        $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Tus datos ya se han cargado en la base de datos de los resultados. No puedes hacerlo otra vez...</p>");
-        ?>
 
         <footer>
             <div id="RedesSociales" align="center">
