@@ -53,7 +53,7 @@ if (empty($_SESSION['ID'])) {
 
         <table id="InsertarResultados" class="Examen">
             <?php
-            $consulta = "SELECT `Correcta` FROM `preguntas`";
+            $consulta = "SELECT * FROM `preguntas`";
             $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
             echo ('<tr>');
             echo ('<th>Número</th>');
@@ -75,153 +75,100 @@ if (empty($_SESSION['ID'])) {
             $contador = 1;
             $aciertos = 0;
             while ($columna = mysqli_fetch_array($resultado)) {
-
+                echo ("<tr>");
+                echo ("<td>" . $columna['ID'] . "</td>");
+                echo ("<td>" . $columna['Pregunta'] . "</td>");
+                echo ("<td>");
 
                 switch ($contador) {
                     case 1:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R1) {
                             echo "<label class='Respuesta-Correcta'>$R1 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R1 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 2:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R2) {
                             echo "<label class='Respuesta-Correcta'>$R2 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R2 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 3:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R3) {
                             echo "<label class='Respuesta-Correcta'>$R3 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R3 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 4:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R4) {
                             echo "<label class='Respuesta-Correcta'>$R4 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R4 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 5:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R5) {
                             echo "<label class='Respuesta-Correcta'>$R5 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R5 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 6:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R6) {
                             echo "<label class='Respuesta-Correcta'>$R6 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R6 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 7:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R7) {
                             echo "<label class='Respuesta-Correcta'>$R7 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R7 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 8:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R8) {
                             echo "<label class='Respuesta-Correcta'>$R8 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R8 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 9:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R9) {
                             echo "<label class='Respuesta-Correcta'>$R9 Correcta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R9 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     case 10:
-                        echo ("<tr>");
-                        echo ("<td>" . $columna['ID'] . "</td>");
-                        echo ("<td>" . $columna['Pregunta'] . "</td>");
-                        echo ("<td>");
                         if ($columna['Correcta'] ==  $R10) {
                             echo "<label class='Respuesta-Correcta'>$R10 orrecta</label>";
                             $aciertos = ($aciertos + 1);
                         } else {
                             echo "<label class='Respuesta-Incorrecta'>$R10 Incorrecta</label>";
                         }
-                        echo ("</td>");
-                        echo ("</tr>");
                         break;
                     default:
+
                         break;
                 }
                 $contador = ($contador + 1);
+                echo ("</td>");
+
+                echo ("</tr>");
             }
             ?>
             <tr>
