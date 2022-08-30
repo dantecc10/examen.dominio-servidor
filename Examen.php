@@ -61,7 +61,8 @@ if (empty($_SESSION['ID'])) {
                     <td>1</td>
                     <td><label for='Pregunta1'>¿Quién escribió la Iliada y la Odisea?</label></td>
                     <td><select name='Pregunta1'>
-                            <option></option>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='1A'>Miguel De Cervantes Saavedra</option>
                             <option value='1B'>Homero</option>
                             <option value='1C'>William Shakespeare</option>
@@ -71,6 +72,8 @@ if (empty($_SESSION['ID'])) {
                     <td>2</td>
                     <td><label for='Pregunta2'>Consiste en percibir, taducir y comprender palabras</label></td>
                     <td><select name='Pregunta2'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='2A'>Escritura</option>
                             <option value='2B'>Poesía</option>
                             <option value='2C'>Lectura</option>
@@ -80,6 +83,8 @@ if (empty($_SESSION['ID'])) {
                     <td>3</td>
                     <td><label for='Pregunta3'>En la literatura es la simulación de la realidad</label></td>
                     <td><select name='Pregunta3'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='3A'>Realidad</option>
                             <option value='3B'>Leyenda</option>
                             <option value='3C'>Novela</option>
@@ -89,6 +94,8 @@ if (empty($_SESSION['ID'])) {
                     <td>4</td>
                     <td><label for='Pregunta4'>Autor checo cuya obra está escrita en alemán, considerada una de las más influyentes del siglo XX</label></td>
                     <td><select name='Pregunta4'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='4A'>Franz Kafka</option>
                             <option value='4B'>William Shakespeare</option>
                             <option value='4C'>Miguel De Cervantes Saavedra</option>
@@ -98,6 +105,8 @@ if (empty($_SESSION['ID'])) {
                     <td>5</td>
                     <td><label for='Pregunta5'>Narración que encadena una serie de sucesos para formar un relato y los presenta a través de ilustraciones</label></td>
                     <td><select name='Pregunta5'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='5A'>Dibujo</option>
                             <option value='5B'>Cartel</option>
                             <option value='5C'>Historieta o cómic</option>
@@ -107,6 +116,8 @@ if (empty($_SESSION['ID'])) {
                     <td>6</td>
                     <td><label for='Pregunta6'>Es el arte que emplea la palabra hablada o escrita como medio de expresión</label></td>
                     <td><select name='Pregunta6'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='6A'>Literatura</option>
                             <option value='6B'>Ensayo</option>
                             <option value='6C'>Lectura</option>
@@ -116,6 +127,8 @@ if (empty($_SESSION['ID'])) {
                     <td>7</td>
                     <td><label for='Pregunta7'>Palabras que imitan los sonidos de la naturaleza</label></td>
                     <td><select name='Pregunta7'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='7A'>Onomatopeya</option>
                             <option value='7B'>Globos</option>
                             <option value='7C'>Gritos</option>
@@ -125,6 +138,8 @@ if (empty($_SESSION['ID'])) {
                     <td>8</td>
                     <td><label for='Pregunta8'>Son los actores de una historia</label></td>
                     <td><select name='Pregunta8'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='8A'>Personaje principal</option>
                             <option value='8B'>Actores</option>
                             <option value='8C'>Personajes</option>
@@ -134,6 +149,8 @@ if (empty($_SESSION['ID'])) {
                     <td>9</td>
                     <td><label for='Pregunta9'>Medievo-Clasicismo-Renacimiento-Barroco-Neoclasicismo-Romanticismo-Realismo-Naturalismo-Costumbrismo-Vanguardias-Modernismo son ejemplos de...</label></td>
                     <td><select name='Pregunta9'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='9A'>Fases de la historia</option>
                             <option value='9B'>Corrientes literarias</option>
                             <option value='9C'>Etapas cronológicas</option>
@@ -143,6 +160,8 @@ if (empty($_SESSION['ID'])) {
                     <td>10</td>
                     <td><label for='Pregunta10'>Mafalda de Quino, El gato Félix de Messmer, Fábulas de policías y Ladrones de trino o Garfield de Jim Davis son ejemplos de...</label></td>
                     <td><select name='Pregunta10'>
+                            <option value='Por defecto'>Selecciona una opción
+                            <option>
                             <option value='10A'>Fábulas </option>
                             <option value='10B'>Cuentos cortos</option>
                             <option value='10C'>Cuentos</option>
