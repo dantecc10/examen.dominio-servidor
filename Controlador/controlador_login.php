@@ -1,17 +1,17 @@
 <?php
 session_start();
 if (!empty($_POST['InicioSesión'])) {
-    if (!empty($_POST['email']) and !empty($_POST['contraseña'])) {
-        $email = $_POST['email'];
+    if (!empty($_POST['usuario']) and !empty($_POST['contraseña'])) {
+        $usuario = $_POST['usuario'];
         $contraseña = $_POST['contraseña'];
-        $sql = $conexión->query("SELECT * FROM `usuarios` WHERE `email`='$email' AND `Contraseña`='$contraseña'");
+        $sql = $conexión->query("SELECT * FROM `estudiantes` WHERE `Usuario`='$usuario' AND `Contraseña`='$contraseña'");
         if ($datos = $sql->fetch_object()) {
             $_SESSION['ID'] = $datos->ID;
             $_SESSION['Nombre'] = $datos->Nombre;
             $_SESSION['Apellidos'] = $datos->Apellidos;
-            $_SESSION['Privilegios'] = $datos->Privilegios;
-            $_SESSION['Email'] = $datos->Email;
-            header("location: ../Consulta.php");
+            $_SESSION['Usuario'] = $datos->Usuario;
+            $_SESSION['Calificación'] = $datos->Calificación;
+            header("location: ../Examen.php");
         } else {
             echo "<div>Acceso denegado<div>";
         }

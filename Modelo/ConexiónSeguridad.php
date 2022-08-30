@@ -1,2 +1,2 @@
 <?php
-$conexión = new mysqli("localhost", "social-admin", "@Servercc10!", "seguridad");
+$conexión = new mysqli("localhost", "medithcl", "ExamenBach", "examen");

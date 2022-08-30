@@ -30,7 +30,7 @@ if (empty($_SESSION['ID'])) {
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
                         <a href="index.php">Inicio</a>
-                        <a href="Consulta.php">Consultar productos</a>
+                        <a href="Examen.php">Consultar productos</a>
                         <a href="Controlador/controlador_logout.php">Cerrar sesión</a>
                         <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>

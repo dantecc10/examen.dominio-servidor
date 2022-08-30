@@ -28,7 +28,7 @@
                 </div>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="Consulta.php">Consultar productos</a>
+                        <a href="Examen.php">Consultar productos</a>
                         <a href="Registro.php">Registro</a>
                         <a href="Actualización.php">Actualización</a>
                         <a href="Venta.php">Venta</a>
