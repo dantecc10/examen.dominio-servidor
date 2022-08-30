@@ -53,7 +53,7 @@ if (empty($_SESSION['ID'])) {
 
         <table id="InsertarResultados" class="Examen">
             <?php
-            $consulta = "SELECT * FROM `preguntas`";
+            $consulta = "SELECT * FROM `preguntas_tercero`";
             $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
             echo ('<tr>');
             echo ('<th>Número</th>');
