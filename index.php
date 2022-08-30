@@ -73,7 +73,7 @@
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h3 class="TítuloArtículo">Mtra. Edith Carpinteyro López.</h3>
         <h4 class="Autor-Artículo">Inicio de sesión</h4>
-        <p class="Descripción-Artículo">Inicia sesión desplegando las opciones del botón "Menú" y dando click en "Iniciar sesión".</p>
+        <p class="Descripción-Artículo">Inicia sesión desplegando las opciones del botón "Menú" y dando click en "Iniciar sesión". Recuerda que sólo tienes una oportunidad, tómate tu tiempo y analiza detenidamente las opciones de cada respuesta...</p>
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">
