@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $database = $dbname = "lista_equipos";
-    $username = "dantecc10";
-    $password = "@dantecc10!";
+    $database = $dbname = "examen";
+    $username = "medithcl";
+    $password = "ExamenBach";
     // Create connection
     $conexión = mysqli_connect($servername, $username, $password, $database);
     // Check connection

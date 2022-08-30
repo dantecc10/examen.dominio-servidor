@@ -144,53 +144,102 @@ if (empty($_SESSION['ID'])) {
         <hr>
 
         <table id="InsertarResultados">
-            <?php
-            $consulta = "SELECT * FROM `equipos administrativos`";
-            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
-            echo "<tr>";
-            echo "<th>ID</th>";
-            echo "<th>Usuario</th>";
-            echo "<th>Nombre</th>";
-            echo "<th>Puesto</th>";
-            echo "<th>Dependencia</th>";
-            echo "<th>IP</th>";
-            echo "<th>Servidor</th>";
-            echo "<th>Inventario</th>";
-            echo "<th>Procesador</th>";
-            echo "<th>Frecuencia</th>";
-            echo "<th>RAM</th>";
-            echo "<th>Sistema Operativo</th>";
-            echo "<th>Marca</th>";
-            echo "<th>Modelo</th>";
-            echo "<th>ECOSYS 3145</th>";
-            echo "<th>TASKalfa</th>";
-            echo "<th>M5521</th>";
-            echo "<th>Estado</th>";
-            echo "</tr>";
-            while ($columna = mysqli_fetch_array($resultado)) {
-                echo "<tr>";
-                echo "<td>" . $columna['ID'] . "</td>";
-                echo "<td>" . $columna['Usuario'] . "</td>";
-                echo "<td>" . $columna['Nombre'] . "</td>";
-                echo "<td>" . $columna['Puesto'] . "</td>";
-                echo "<td>" . $columna['Dependencia'] . "</td>";
-                echo "<td>" . $columna['IP'] . "</td>";
-                echo "<td>" . $columna['Servidor'] . "</td>";
-                echo "<td>" . $columna['Inventario'] . "</td>";
-                echo "<td>" . $columna['Procesador'] . "</td>";
-                echo "<td>" . $columna['Frecuencia'] . "</td>";
-                echo "<td>" . $columna['RAM'] . "</td>";
-                echo "<td>" . $columna['Sistema Operativo'] . "</td>";
-                echo "<td>" . $columna['Marca'] . "</td>";
-                echo "<td>" . $columna['Modelo'] . "</td>";
-                echo "<td>" . $columna['ECOSYS 3145'] . "</td>";
-                echo "<td>" . $columna['TASKalfa'] . "</td>";
-                echo "<td>" . $columna['M5521'] . "</td>";
-                echo "<td>" . $columna['Estado'] . "</td>";
-                echo "</tr>";
-            }
-            mysqli_close($conexión)
-            ?>
+            <tr>
+                <th>Número</th>
+                <th>Pregunta</th>
+                <th>Respuesta</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><label for='Pregunta1'>¿Quién escribió la Iliada y la Odisea?</label></td>
+                <td><select name='Pregunta1'>
+                        <option value='1A'>Miguel De Cervantes Saavedra</option>
+                        <option value='1B'>Homero</option>
+                        <option value='1C'>William Shakespeare</option>
+                        <option value='1D'>Julio Verne</option><select></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><label for='Pregunta2'>Consiste en percibir, taducir y comprender palabras</label></td>
+                <td><select name='Pregunta2'>
+                        <option value='2A'>Escritura</option>
+                        <option value='2B'>Poesía</option>
+                        <option value='2C'>Lectura</option>
+                        <option value='2D'>Prosopopeya</option><select></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><label for='Pregunta3'>En la literatura es la simulación de la realidad</label></td>
+                <td><select name='Pregunta3'>
+                        <option value='3A'>Realidad</option>
+                        <option value='3B'>Leyenda</option>
+                        <option value='3C'>Novela</option>
+                        <option value='3D'>Ficción literaria</option><select></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><label for='Pregunta4'>Autor checo cuya obra está escrita en alemán, considerada una de las más influyentes del siglo XX</label></td>
+                <td><select name='Pregunta4'>
+                        <option value='4A'>Franz Kafka</option>
+                        <option value='4B'>William Shakespeare</option>
+                        <option value='4C'>Miguel De Cervantes Saavedra</option>
+                        <option value='4D'>Jorge Isaacs</option><select></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><label for='Pregunta5'>Narración que encadena una serie de sucesos para formar un relato y los presenta a través de ilustraciones</label></td>
+                <td><select name='Pregunta5'>
+                        <option value='5A'>Dibujo</option>
+                        <option value='5B'>Cartel</option>
+                        <option value='5C'>Historieta o cómic</option>
+                        <option value='5D'>Viñetas</option><select></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><label for='Pregunta6'>Es el arte que emplea la palabra hablada o escrita como medio de expresión</label></td>
+                <td><select name='Pregunta6'>
+                        <option value='6A'>Literatura</option>
+                        <option value='6B'>Ensayo</option>
+                        <option value='6C'>Lectura</option>
+                        <option value='6D'>Paráfrasis</option><select></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><label for='Pregunta7'>Palabras que imitan los sonidos de la naturaleza</label></td>
+                <td><select name='Pregunta7'>
+                        <option value='7A'>Onomatopeya</option>
+                        <option value='7B'>Globos</option>
+                        <option value='7C'>Gritos</option>
+                        <option value='7D'>Símbolos auditivos</option><select></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><label for='Pregunta8'>Son los actores de una historia</label></td>
+                <td><select name='Pregunta8'>
+                        <option value='8A'>Personaje principal</option>
+                        <option value='8B'>Actores</option>
+                        <option value='8C'>Personajes</option>
+                        <option value='8D'>Narradores</option><select></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><label for='Pregunta9'>Medievo-Clasicismo-Renacimiento-Barroco-Neoclasicismo-Romanticismo-Realismo-Naturalismo-Costumbrismo-Vanguardias-Modernismo son ejemplos de...</label></td>
+                <td><select name='Pregunta9'>
+                        <option value='9A'>Fases de la historia</option>
+                        <option value='9B'>Corrientes literarias</option>
+                        <option value='9C'>Etapas cronológicas</option>
+                        <option value='9D'>Etapas históricas</option><select></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><label for='Pregunta10'>Mafalda de Quino, El gato Félix de Messmer, Fábulas de policías y Ladrones de trino o Garfield de Jim Davis son ejemplos de...</label></td>
+                <td><select name='Pregunta10'>
+                        <option value='10A'>Fábulas </option>
+                        <option value='10B'>Cuentos cortos</option>
+                        <option value='10C'>Cuentos</option>
+                        <option value='10D'>Cómics</option><select></td>
+            </tr>
+
         </table>
     </div>
     <footer>
