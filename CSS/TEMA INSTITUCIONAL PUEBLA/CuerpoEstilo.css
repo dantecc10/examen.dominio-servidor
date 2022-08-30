@@ -2,6 +2,12 @@
 
 /*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
     {
+    table.Examen tr td select {
+        background-color: #07A189;
+        color: white;
+        width: 100%;
+    }
+
 
     table.Catálogo,
     table.Catálogo th,

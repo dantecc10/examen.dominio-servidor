@@ -51,7 +51,7 @@ if (empty($_SESSION['ID'])) {
 
         <p>Examen:</p>
         <form action="" method="POST">
-            <table id="InsertarResultados">
+            <table id="InsertarResultados" class="Examen">
                 <tr>
                     <th>Número</th>
                     <th>Pregunta</th>
