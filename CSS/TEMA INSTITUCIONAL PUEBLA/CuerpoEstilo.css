@@ -400,8 +400,10 @@
 
     label.Respuesta-Correcta,
     label.Respuesta-Incorrecta {
+        width: 100%;
         color: white;
         border-radius: 10px;
+        padding: 5px 10px 5px 10px;
     }
 }
 
