@@ -76,13 +76,9 @@ if (empty($_SESSION['ID'])) {
             while ($columna = mysqli_fetch_array($resultado)) {
                 echo ("<tr>");
 
-                echo ("<td>");
-                echo ($columna['ID']);
-                echo ("</td>");
+                echo ("<td>" . $columna['ID'] . "</td>");
 
-                echo ("<td>");
-                echo ($columna['Pregunta']);
-                echo ("</td>");
+                echo ("<td>" . $columna['Pregunta'] . "</td>");
 
                 echo ("<td>");
                 switch ($contador) {
