@@ -27,7 +27,9 @@
 
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="Examen.php">Examen</a>
+                        <a href="DiagnósticoLiteratura.php">Examen de literatura</a>
+                        <a href="DiagnósticoComunicación.php">Examen de comunicación</a>
+                        <a href="DiagnósticoHistoria.php">Examen de historia</a>
                         <button onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</button>
                     </div>
                 </div>
@@ -69,11 +71,11 @@
             </div>
         </form>
     </div>
-    <h2>Examen diagnóstico - Literatura</h2>
+    <h2>Examen diagnóstico</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h3 class="TítuloArtículo">Mtra. Edith Carpinteyro López.</h3>
-        <h4 class="Autor-Artículo">Inicio de sesión</h4>
-        <p class="Descripción-Artículo">Inicia sesión desplegando las opciones del botón "Menú" y dando click en "Iniciar sesión". Recuerda que sólo tienes una oportunidad, tómate tu tiempo y analiza detenidamente las opciones de cada respuesta...</p>
+        <h4 class="Autor-Artículo">Selección</h4>
+        <p class="Descripción-Artículo">Elige en el menú de la esquina superior derecha el examen que te corresponda según tu grado. Recuerda que sólo a ese tendrás acceso, en una sola oportnidad para cargar tus resultados. Lee bien las preguntas y elige la opción correcta.</p>
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">
