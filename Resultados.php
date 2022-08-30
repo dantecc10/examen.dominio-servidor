@@ -73,7 +73,7 @@ if (empty($_SESSION['ID'])) {
             $R10 = $_POST['Pregunta10'];
 
             $contador = 1;
-            $aciertos;
+            $aciertos = 0;
             while ($columna = mysqli_fetch_array($resultado)) {
                 echo ("<tr>");
                 echo ("<td>" . $columna['ID'] . "</td>");
