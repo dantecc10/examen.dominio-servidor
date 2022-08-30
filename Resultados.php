@@ -182,7 +182,7 @@ if (empty($_SESSION['ID'])) {
         </table>
         <?php
         $consulta = ("INSERT INTO `resultados`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
-        echo $consulta;
+        //echo $consulta;
         $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
         ?>
 
