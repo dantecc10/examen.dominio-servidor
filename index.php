@@ -27,7 +27,7 @@
 
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="Examen.php">Consultar productos</a>
+                        <a href="Examen.php">Examen</a>
                         <button onclick="document.getElementById('DivInicioSesión').style.display='block'" class="IniciarSesión DecoradoBotón" style="width:auto;" id="BotónAbreInicioSesión">Iniciar sesión</button>
                     </div>
                 </div>

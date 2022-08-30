@@ -30,9 +30,9 @@ if (empty($_SESSION['ID'])) {
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
                         <a href="index.php">Inicio</a>
-                        <a href="Examen.php">Consultar productos</a>
+                        <a href="Examen.php">Examen</a>
                         <a href="Controlador/controlador_logout.php">Cerrar sesión</a>
-                        <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
+
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ if (empty($_SESSION['ID'])) {
         </p>
 
 
-        <p>Examen:</p>
+        <p class="Descripción-Artículo">Examen:</p>
 
         <table id="InsertarResultados" class="Examen">
             <?php
@@ -184,7 +184,7 @@ if (empty($_SESSION['ID'])) {
         <?php
         $consulta = ("INSERT INTO `resultados`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
         //echo $consulta;
-        $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+        $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Tus datos ya se han cargado en la base de datos de los resultados. No puedes hacerlo otra vez...</p>");
         ?>
 
         <footer>
