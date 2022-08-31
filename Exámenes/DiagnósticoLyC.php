@@ -59,7 +59,7 @@
             </div>
             <?php
             include "../Modelo/ConexiónSeguridad.php";
-            include "../Controlador/controlador_login_literatura.php";
+            include "../Controlador/controlador_login_literatura.php"; //CAMBIAR LOGIN
             ?>
 
             <div class="container" style="background-color:#f1f1f1">
@@ -68,7 +68,7 @@
             </div>
         </form>
     </div>
-    <h2>Examen diagnóstico - Literatura</h2>
+    <h2>Examen diagnóstico - Lenguaje y Comunicación</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h3 class="TítuloArtículo">Mtra. Edith Carpinteyro López.</h3>
         <h4 class="Autor-Artículo">Inicio de sesión</h4>
