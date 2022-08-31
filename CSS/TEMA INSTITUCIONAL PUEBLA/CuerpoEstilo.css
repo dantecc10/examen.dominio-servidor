@@ -2,17 +2,6 @@
 
 /*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
     {
-    table.Examen tr td select {
-        background-color: #07A189;
-        color: white;
-        width: 100%;
-        border-radius: 10px;
-        width: 100%;
-    }
-
-    td#TotalAciertos {
-        width: 80%;
-    }
 
     table.Catálogo,
     table.Catálogo th,
@@ -256,29 +245,6 @@
 
     }
 
-    #TablaFiltros td,
-    .InsertarResultados td {
-        background-color: #eeeeee;
-        /*PROBLEMA TABLA CSS*/
-        color: #3b3b41;
-    }
-
-    table.InsertarResultados,
-    table#TablaFiltros {
-        width: 100%;
-    }
-
-    .InsertarResultados th,
-    .InsertarResultados tr,
-    .InsertarResultados td,
-    #TablaFiltros th,
-    #TablaFiltros tr,
-    #TablaFiltros td {
-        border: 1px solid #07A189;
-        text-align: center;
-        border-radius: 1.5px;
-    }
-
     .InsertarResultados th,
     #TablaFiltros th {
         background-color: #e7e7e7;
@@ -384,6 +350,29 @@
         font-family: 'Oxygen', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
+    #TablaFiltros td,
+    .InsertarResultados td {
+        background-color: #eeeeee;
+        /*PROBLEMA TABLA CSS*/
+        color: #3b3b41;
+    }
+
+    table.InsertarResultados,
+    table#TablaFiltros {
+        width: 100%;
+    }
+
+    .InsertarResultados th,
+    .InsertarResultados tr,
+    .InsertarResultados td,
+    #TablaFiltros th,
+    #TablaFiltros tr,
+    #TablaFiltros td {
+        border: 1px solid #07A189;
+        text-align: center;
+        border-radius: 1.5px;
+    }
+
     td#SinDecorado {
         border: none;
         text-align: center;
@@ -404,6 +393,18 @@
         color: white;
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
+    }
+
+    table.Examen tr td select {
+        background-color: #07A189;
+        color: white;
+        width: 100%;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    td#TotalAciertos {
+        width: 80%;
     }
 }
 
