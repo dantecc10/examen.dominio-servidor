@@ -68,7 +68,7 @@
             </div>
         </form>
     </div>
-    <h2>Examen diagnóstico - Literatura</h2>
+    <h2>Examen diagnóstico - Historia</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h3 class="TítuloArtículo">Mtra. Edith Carpinteyro López.</h3>
         <h4 class="Autor-Artículo">Inicio de sesión</h4>
