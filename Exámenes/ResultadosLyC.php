@@ -182,7 +182,7 @@ if (empty($_SESSION['ID'])) {
         </table>
         <?php
         $alumno = ($_SESSION['Nombre'] . " " . $_SESSION['Apellidos']);
-        $consulta = ("SELECT * FROM `resultados_lyc` WHERE ");
+        $consulta = ("SELECT * FROM `resultados_lyc`");
         $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Error en la consulta a la base de datos</p>");
         while ($columna = mysqli_fetch_array($resultado)) {
             if ($columna['Alumno'] == $alumno) {
