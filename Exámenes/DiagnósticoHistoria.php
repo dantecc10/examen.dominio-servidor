@@ -59,7 +59,7 @@
             </div>
             <?php
             include "../Modelo/ConexiónSeguridad.php";
-            include "../Controlador/controlador_login_literatura.php";
+            include "../Controlador/controlador_login_historia.php";
             ?>
 
             <div class="container" style="background-color:#f1f1f1">
