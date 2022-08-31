@@ -15,7 +15,7 @@ if (empty($_SESSION['ID'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio social - Administración</title>
+    <title>Resultados del examen de lenguaje y comunicación</title>
 </head>
 
 <body>
@@ -181,7 +181,15 @@ if (empty($_SESSION['ID'])) {
             </tr>
         </table>
         <?php
-        $consulta = ("INSERT INTO `resultados_lyc`(`ID`, `Alumno`, `Calificación`) VALUES ('','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
+        $alumno = ($_SESSION['Nombre'] . " " . $_SESSION['Apellidos']);
+        $consulta = ("SELECT * FROM `resultados_lyc` WHERE ");
+        $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Error en la consulta a la base de datos</p>");
+        while ($columna = mysqli_fetch_array($resultado)) {
+            if ($columna['Alumno'] == $alumno) {
+                mysqli_close($conexión);
+            }
+        }
+        $consulta = ("INSERT INTO `resultados_lyc`(`ID`, `Alumno`, `Calificación`) VALUES ('','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "'," . $aciertos .  ")");
         //echo $consulta;
         $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Tus datos ya se han cargado en la base de datos de los resultados. No puedes hacerlo otra vez...</p>");
         ?>
