@@ -41,7 +41,7 @@ session_start();
         <p class="Descripción-Artículo">
             <?php
             require('Scripts PHP/Conexión.php');
-            echo (". Aquí tienes los resultados del examen diagnóstico de literatura, " . $_SESSION['Nombre'] . ".");
+            echo (". Aquí tienes los resultados de los exámenes, " . $_SESSION['Nombre'] . ".");
             ?>
         </p>
 
