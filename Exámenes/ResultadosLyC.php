@@ -194,6 +194,7 @@ if (empty($_SESSION['ID'])) {
         $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Tus datos ya se han cargado en la base de datos de los resultados. No puedes hacerlo otra vez...</p>");
         ?>
     </div>
+
     <footer>
         <div id="RedesSociales" align="center">
             <hr id="AntesSociales">
