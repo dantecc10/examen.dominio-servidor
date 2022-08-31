@@ -257,20 +257,20 @@
     }
 
     #TablaFiltros td,
-    #InsertarResultados td {
+    .InsertarResultados td {
         background-color: #eeeeee;
         /*PROBLEMA TABLA CSS*/
         color: #3b3b41;
     }
 
-    table#InsertarResultados,
+    table.InsertarResultados,
     table#TablaFiltros {
         width: 100%;
     }
 
-    #InsertarResultados th,
-    #InsertarResultados tr,
-    #InsertarResultados td,
+    .InsertarResultados th,
+    .InsertarResultados tr,
+    .InsertarResultados td,
     #TablaFiltros th,
     #TablaFiltros tr,
     #TablaFiltros td {
@@ -279,7 +279,7 @@
         border-radius: 1.5px;
     }
 
-    #InsertarResultados th,
+    .InsertarResultados th,
     #TablaFiltros th {
         background-color: #e7e7e7;
         font-size: 13px;
@@ -656,20 +656,20 @@
     }
 
     #TablaFiltros td,
-    #InsertarResultados td {
+    .InsertarResultados td {
         background-color: #eeeeee;
         /*PROBLEMA TABLA CSS*/
         color: #3b3b41;
     }
 
-    table#InsertarResultados,
+    table.InsertarResultados,
     table#TablaFiltros {
         width: 100%;
     }
 
-    #InsertarResultados th,
-    #InsertarResultados tr,
-    #InsertarResultados td,
+    .InsertarResultados th,
+    .InsertarResultados tr,
+    .InsertarResultados td,
     #TablaFiltros th,
     #TablaFiltros tr,
     #TablaFiltros td {
@@ -678,7 +678,7 @@
         border-radius: 1.5px;
     }
 
-    #InsertarResultados th,
+    .InsertarResultados th,
     #TablaFiltros th {
         background-color: #e7e7e7;
         font-size: 13px;

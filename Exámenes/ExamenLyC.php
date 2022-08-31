@@ -50,7 +50,7 @@ if (empty($_SESSION['ID'])) {
 
         <p>Examen:</p>
         <form action="ResultadosLyC.php" method="POST">
-            <table id="InsertarResultados" class="Examen">
+            <table class="InsertarResultados Examen">
                 <tr>
                     <th>Número</th>
                     <th>Pregunta</th>

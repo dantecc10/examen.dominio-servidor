@@ -50,7 +50,7 @@ if (empty($_SESSION['ID'])) {
 
         <p class="Descripción-Artículo">Examen:</p>
 
-        <table id="InsertarResultados" class="Examen">
+        <table class="InsertarResultados Examen">
             <?php
             $consulta = "SELECT * FROM `preguntas_literatura`";
             $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");

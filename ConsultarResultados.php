@@ -46,11 +46,52 @@ session_start();
         </p>
 
 
-        <p class="Descripción-Artículo">Resultados:</p>
-
-        <table id="InsertarResultados" class="Examen">
+        <p class="Descripción-Artículo">Resultados literatura:</p>
+        <table class="InsertarResultados Examen">
             <?php
-            $consulta = "SELECT * FROM `resultados`";
+            $consulta = "SELECT * FROM `resultados_literatura`";
+            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+            echo ('<tr>');
+            echo ('<th>ID</th>');
+            echo ('<th>Nombre</th>');
+            echo ('<th>Calificación</th>');
+            echo ('</tr>');
+            while ($columna = mysqli_fetch_array($resultado)) {
+                echo ("<tr>");
+                echo ("<td>" . $columna['ID'] . "</td>");
+                echo ("<td>" . $columna['Alumno'] . "</td>");
+                echo ("<td>" . $columna['Calificación'] . "</td>");
+
+                echo ("</tr>");
+            }
+            ?>
+        </table>
+        <br>
+        <p class="Descripción-Artículo">Resultados Lenguaje y Comunicación:</p>
+        <table class="InsertarResultados Examen">
+            <?php
+            $consulta = "SELECT * FROM `resultados_lyc`";
+            $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
+            echo ('<tr>');
+            echo ('<th>ID</th>');
+            echo ('<th>Nombre</th>');
+            echo ('<th>Calificación</th>');
+            echo ('</tr>');
+            while ($columna = mysqli_fetch_array($resultado)) {
+                echo ("<tr>");
+                echo ("<td>" . $columna['ID'] . "</td>");
+                echo ("<td>" . $columna['Alumno'] . "</td>");
+                echo ("<td>" . $columna['Calificación'] . "</td>");
+
+                echo ("</tr>");
+            }
+            ?>
+        </table>
+        <br>
+        <p class="Descripción-Artículo">Resultados Historia:</p>
+        <table class="InsertarResultados Examen">
+            <?php
+            $consulta = "SELECT * FROM `resultados_historia`";
             $resultado = mysqli_query($conexión, $consulta) or die("Error en la consulta a la base de datos");
             echo ('<tr>');
             echo ('<th>ID</th>');
