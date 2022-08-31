@@ -181,7 +181,7 @@ if (empty($_SESSION['ID'])) {
             </tr>
         </table>
         <?php
-        $consulta = ("INSERT INTO `resultados_literatura`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
+        $consulta = ("INSERT INTO `resultados_lyc`(`ID`, `Alumno`, `Calificación`) VALUES ('" . $_SESSION['ID'] . "','" . $_SESSION['Nombre'] . " " . $_SESSION['Apellidos'] . "','" . $aciertos .  "')");
         //echo $consulta;
         $resultado = mysqli_query($conexión, $consulta) or die("<p class='Descripción-Artículo'>Tus datos ya se han cargado en la base de datos de los resultados. No puedes hacerlo otra vez...</p>");
         ?>
