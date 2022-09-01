@@ -125,8 +125,6 @@
 
     #Contenido-Encabezado {
         height: 100%;
-        padding-left: 15%;
-        padding-right: 15%;
         display: flex;
         align-items: center;
         justify-content: left;
@@ -134,7 +132,7 @@
 
     img#Logo {
         width: 100%;
-        height: auto;
+        height: 100%;
         margin-right: 10%;
     }
 }
