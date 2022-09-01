@@ -136,9 +136,9 @@
     }
 
     img#Logo {
-        width: 115px;
-        height: 115px;
-        margin-right: 630px;
+        width: 33%;
+        height: auto;
+        margin-right: 10%;
     }
 }
 
