@@ -787,9 +787,9 @@
 }
 
 /*Fin de punto de ruptura para tablets*/
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 720px)
 
 /*Punto de ruptura para móviles*/
     {}
 
-/*Fin de punto de ruptura para móviles*/
+/* Sección de reglas generales */
