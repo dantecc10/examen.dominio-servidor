@@ -72,32 +72,35 @@
     .Botón-Desplegar {
         font-weight: bold;
         box-shadow: #07A189;
-        background-color: #90aca0;
+        background-color: #07A189;
         color: #2F2F35;
         padding: 16px;
         font-size: 20px;
         border-radius: 20px;
         cursor: pointer;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 10%;
+        margin-top: -25px;
     }
 
     .Contenido-Desplegable {
         display: none;
         position: absolute;
         background-color: #2F2F35;
-        min-width: 160px;
+        min-width: 90px;
+        max-width: 120px;
         box-shadow: 0px 8px 16px 0px #07B89E;
         z-index: 1;
+        margin-left: 3%;
     }
 
     .Contenido-Desplegable #BotónAbreInicioSesión {
         width: 100%;
-        margin: 0% 5% 0% 5%;
     }
 
     .Contenido-Desplegable a {
         color: #07B89E;
-        font-size: 20px;
+        font-size: 15px;
         font-family: 'Times New Roman', Times, serif;
         padding: 12px 16px;
         text-decoration: solid;
@@ -113,12 +116,6 @@
     /* Show the dropdown menu on hover */
     .Menú-Desplegable:hover .Contenido-Desplegable {
         display: block;
-    }
-
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .Menú-Desplegable:hover .Botón-Desplegar {
-        background-color: #2F2F35;
-        color: #07A189;
     }
 }
 
