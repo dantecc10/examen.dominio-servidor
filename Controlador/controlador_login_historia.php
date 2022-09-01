@@ -13,6 +13,15 @@ if (!empty($_POST['InicioSesión'])) {
             $_SESSION['Calificación'] = $datos->Calificación;
             header("location: ../Exámenes/ExamenHistoria.php");
         } else {
+            $sql = $conexión->query("SELECT * FROM `estudiantes_segundo` WHERE `Usuario`='$usuario' AND `Contraseña`='$contraseña'");
+            if ($datos = $sql->fetch_object()) {
+                $_SESSION['ID'] = $datos->ID;
+                $_SESSION['Nombre'] = $datos->Nombre;
+                $_SESSION['Apellidos'] = $datos->Apellidos;
+                $_SESSION['Usuario'] = $datos->Usuario;
+                $_SESSION['Calificación'] = $datos->Calificación;
+                header("location: ../Exámenes/ExamenHistoria.php");
+            }
             echo "<div>Acceso denegado<div>";
         }
     } else {
