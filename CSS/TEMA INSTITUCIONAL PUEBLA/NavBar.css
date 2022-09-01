@@ -85,7 +85,7 @@
         background-color: #eaeaed;
         color: #c62038;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 40px;
+        font-size: 20px;
         text-align: center;
         width: 40%;
         /*margin-right: 90px;
@@ -140,7 +140,7 @@
     }
 
     img#Logo {
-        width: 33%;
+        width: 100%;
         height: auto;
         margin-right: 10%;
     }
