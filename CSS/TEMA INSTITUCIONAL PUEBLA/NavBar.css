@@ -87,8 +87,9 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 40px;
         text-align: center;
-        margin-right: 90px;
-        margin-left: -100px;
+        width: 40%;
+        /*margin-right: 90px;
+        margin-left: -100px;*/
     }
 
     h1:hover {
@@ -101,15 +102,18 @@
 
     #Encabezado {
         height: 100px;
+        width: 100%;
     }
 
     #Encabezado-Superior {
         height: 50%;
+        width: 100%;
         background-color: #691b33;
     }
 
     #Encabezado-Inferior {
         height: 50%;
+        width: 100%;
         background-color: #a7143e;
     }
 
